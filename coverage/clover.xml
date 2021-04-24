@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1619178421394" clover="3.2.0">
-  <project timestamp="1619178421394" name="All files">
+<coverage generated="1619268942206" clover="3.2.0">
+  <project timestamp="1619268942206" name="All files">
     <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0" elements="4" coveredelements="0" complexity="0" loc="2" ncloc="2" packages="1" files="1" classes="1">
       <file name="index.ts" path="/Users/bailey/dev/functional-programming-library/src/index.ts">
         <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>

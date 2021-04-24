@@ -3,7 +3,7 @@
 /**
  * dedupe
  * 
- * @returns an iterator with any duplicates from the original iterator removed.  Order is preserved.
+ * @returns An iterable that contains only the first of each distinct value.
  */
 export function* dedupe<T>(iter: Iterable<T>): Generator<T> {
     const values = new Set()
