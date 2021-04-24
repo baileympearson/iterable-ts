@@ -1,6 +1,8 @@
 import { enumerate } from './enumerate'
 
 /**
+ * drop(n)
+ * 
  * Removes the first n elements from the iterable
  * 
  * @returns A function that takes an iterable as a parameter.  This function removes the first n elements from an interable
