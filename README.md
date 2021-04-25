@@ -56,21 +56,15 @@ for (const value in source) {
 
 - Uses the concept of iterators as its base abstraction
 
-- 
+Some libraries, such as rambda.js, use more complicated functional programming constructs as the base abstraction.  For 
+example, the `map` function in rambda.js takes a `Functor` and returns a "`Functor` of the same shape".  In a flexible, 
+interpreted language like Javascript, I wanted to model the library off of the approach of Clojure.  Every standard
+function returns an iterable, which can be turned into native Javascript structures as desired.
 
-A couple of design notes:
-
-- This library provides free functions. Unlike other libraries, complex operator chains are built from composition of
-  functions rather than method chaining. This means that there are no concepts to learn in this library other than
-  the functions contained.
-
-- The library is not optimized for performance. Out of the box, iterators have performance benefits over raw
-  collection operators (such as `Array.map`), but I made no effort to optimize further. This is intended as learning
-  experience - optimization might come later.
-
-- Many of the provided functions are curried. This is to increase composability and reusibility of operators.
-
-- Some functions return a custom defined `Optional` type.
+```ts
+map(x => x * 2, range(5))                   // Generator<number>
+into('array', map(x => x * 2, range(5)))    // [0, 2, 4, 6, 8]
+```
 
 ## Installation
 
