@@ -7,6 +7,6 @@ export function* iterate<T>(func: (arg0: T) => T, seed: T): Generator<T> {
   let initial = func(seed)
   for (;;) {
     yield initial
-    initial = func(seed)
+    initial = func(initial)
   }
 }

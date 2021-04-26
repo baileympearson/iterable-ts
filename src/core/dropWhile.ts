@@ -21,14 +21,14 @@ export function dropWhile<T>(
   iter?: Iterable<T>
 ): Iterable<T> | ((arg0: Iterable<T>) => Iterable<T>) {
   function* _dropWhile(iter: Iterable<T>): Iterable<T> {
+    let hasPredicatePassed = false
     for (const value of iter) {
       if (!pred(value)) {
-        break
+        hasPredicatePassed = true
       }
-    }
-
-    for (const value of iter) {
-      yield value
+      if (hasPredicatePassed) {
+        yield value
+      }
     }
   }
 

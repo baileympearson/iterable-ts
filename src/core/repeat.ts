@@ -1,3 +1,4 @@
+import { iterate } from "./iterate";
 
 /**
  * repeat
@@ -7,7 +8,5 @@
  * @returns An infinite iterable of the provided value
  */
 export function* repeat<T>(value: T): Generator<T> {
-  for (;;) {
-    yield value
-  }
+  yield* iterate(x => x, value)
 }
