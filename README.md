@@ -1,5 +1,9 @@
 # functional-ts
 
+This library is still a work-in-progress.
+
+Documentation: https://github.com/baileympearson/iterable-ts
+
 ## What is functional-ts?
 
 functional-ts is a simple, flexible library for working with syncronous iterators in Javascript. The intention
