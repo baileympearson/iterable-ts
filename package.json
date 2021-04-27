@@ -21,7 +21,7 @@
   "scripts": {
     "lint": "tslint  --project tsconfig.json -t codeFrame 'src/**/*.ts' 'test/**/*.ts'",
     "prebuild": "rimraf dist",
-    "build": "tsc --module commonjs && rollup -c rollup.config.ts && typedoc --out docs --target es6 --theme minimal --mode file src",
+    "build": "tsc --module commonjs && rollup -c rollup.config.ts && typedoc --out docs src/index.ts",
     "start": "rollup -c rollup.config.ts -w",
     "test": "jest --coverage",
     "test:watch": "jest --coverage --watch",
@@ -34,8 +34,7 @@
     "precommit": "lint-staged",
     "travis-deploy-once": "travis-deploy-once",
     "docs:clean": "rm -rf docs",
-    "docs:build": "npx typedoc --categorizeByGroup true --out docs src/index.ts",
-    "docs:build:watch": "npx typedoc --out docs src/index.ts --watch"
+    "docs:build": "npx typedoc --categorizeByGroup true --out docs src/index.ts"
   },
   "lint-staged": {
     "{src,test}/**/*.ts": [
