@@ -1,5 +1,4 @@
-import { filter } from '../../src/core/filter'
-import { into } from '../../src/utility'
+import { filter, into } from '../../src'
 
 describe('tests for filter', () => {
   function all<T>(val: T): boolean {

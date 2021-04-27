@@ -1,5 +1,4 @@
-import { findIndex } from '../../src/core/findIndex'
-import { none, some } from '../../src/utility'
+import { none, some, findIndex } from '../../src'
 
 describe('findIndex tests', () => {
     const isEven = (num: number) => num % 2 === 0

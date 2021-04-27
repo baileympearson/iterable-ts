@@ -62,10 +62,21 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Functions</h3>
+							<h3>Type aliases</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-type-alias tsd-has-type-parameter"><a href="modules.html#predicatefunction" class="tsd-kind-icon">Predicate<wbr>Function</a></li>
+								<li class="tsd-kind-type-alias tsd-has-type-parameter"><a href="modules.html#unaryfunction" class="tsd-kind-icon">Unary<wbr>Function</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Consumption Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#all" class="tsd-kind-icon">all</a></li>
+							</ul>
+							<h3>Other Functions</h3>
+							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#any" class="tsd-kind-icon">any</a></li>
+								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#compose" class="tsd-kind-icon">compose</a></li>
 								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#dedupe" class="tsd-kind-icon">dedupe</a></li>
 								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#drop" class="tsd-kind-icon">drop</a></li>
 								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#dropwhile" class="tsd-kind-icon">drop<wbr>While</a></li>
@@ -79,6 +90,7 @@
 								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#iterate" class="tsd-kind-icon">iterate</a></li>
 								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#map" class="tsd-kind-icon">map</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#none" class="tsd-kind-icon">none</a></li>
+								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#pipe" class="tsd-kind-icon">pipe</a></li>
 								<li class="tsd-kind-function"><a href="modules.html#range" class="tsd-kind-icon">range</a></li>
 								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#repeat" class="tsd-kind-icon">repeat</a></li>
 								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#some" class="tsd-kind-icon">some</a></li>
@@ -91,7 +103,85 @@
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Functions</h2>
+				<h2>Type aliases</h2>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter">
+					<a name="predicatefunction" class="tsd-anchor"></a>
+					<h3>Predicate<wbr>Function</h3>
+					<div class="tsd-signature tsd-kind-icon">Predicate<wbr>Function&lt;T&gt;<span class="tsd-signature-symbol">:</span> <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in types/predicate-function.ts:8</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A type representing a predicate function.</p>
+						</div>
+					</div>
+					<h4 class="tsd-type-parameters-title">Type parameters</h4>
+					<ul class="tsd-type-parameters">
+						<li>
+							<h4>T</h4>
+							<div class="tsd-comment tsd-typography">
+								<p>the input type of the function</p>
+							</div>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter">
+					<a name="unaryfunction" class="tsd-anchor"></a>
+					<h3>Unary<wbr>Function</h3>
+					<div class="tsd-signature tsd-kind-icon">Unary<wbr>Function&lt;In, Out&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>arg0<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">In</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Out</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in types/unary-function.ts:8</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A type representing a single-argument function.</p>
+						</div>
+					</div>
+					<h4 class="tsd-type-parameters-title">Type parameters</h4>
+					<ul class="tsd-type-parameters">
+						<li>
+							<h4>In</h4>
+							<div class="tsd-comment tsd-typography">
+								<p>the type of the parameter</p>
+							</div>
+						</li>
+						<li>
+							<h4>Out</h4>
+							<div class="tsd-comment tsd-typography">
+								<p>the return type of the function</p>
+							</div>
+						</li>
+					</ul>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>arg0<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">In</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Out</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>arg0: <span class="tsd-signature-type">In</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Out</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Consumption Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
 					<a name="all" class="tsd-anchor"></a>
 					<h3>all</h3>
@@ -103,12 +193,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/baileympearson/iterable-ts/blob/ba91e04e/src/core/all.ts#L6">core/all.ts:6</a></li>
+									<li>Defined in operators/all.ts:10</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Exhausts the iterable and returns true if all elements satisfy the predicate function.</p>
+									<p>Exhausts the iterable and returns true if all elements satisfy the predicate function.  This version is curried
+									to allow for succient composition of operators.</p>
 								</div>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -165,7 +256,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/baileympearson/iterable-ts/blob/ba91e04e/src/core/all.ts#L13">core/all.ts:13</a></li>
+									<li>Defined in operators/all.ts:19</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -211,6 +302,9 @@
 						</li>
 					</ul>
 				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Other Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
 					<a name="any" class="tsd-anchor"></a>
 					<h3>any</h3>
@@ -222,7 +316,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/baileympearson/iterable-ts/blob/ba91e04e/src/core/any.ts#L9">core/any.ts:9</a></li>
+									<li>Defined in operators/any.ts:9</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -284,7 +378,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/baileympearson/iterable-ts/blob/ba91e04e/src/core/any.ts#L16">core/any.ts:16</a></li>
+									<li>Defined in operators/any.ts:16</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -331,6 +425,422 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
+					<a name="compose" class="tsd-anchor"></a>
+					<h3>compose</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">compose&lt;A, B, Out&gt;<span class="tsd-signature-symbol">(</span>fn1<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Out</span><span class="tsd-signature-symbol">&gt;</span>, fn2<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Out</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">compose&lt;A, B, C, Out&gt;<span class="tsd-signature-symbol">(</span>fn1<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Out</span><span class="tsd-signature-symbol">&gt;</span>, fn2<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">&gt;</span>, fn3<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Out</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">compose&lt;A, B, C, D, Out&gt;<span class="tsd-signature-symbol">(</span>fn1<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Out</span><span class="tsd-signature-symbol">&gt;</span>, fn2<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">&gt;</span>, fn3<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">&gt;</span>, fn4<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Out</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">compose&lt;A, B, C, D, E, Out&gt;<span class="tsd-signature-symbol">(</span>fn1<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Out</span><span class="tsd-signature-symbol">&gt;</span>, fn2<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">&gt;</span>, fn3<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">&gt;</span>, fn4<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">&gt;</span>, fn5<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Out</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">compose&lt;A, B, C, D, E, F, Out&gt;<span class="tsd-signature-symbol">(</span>fn1<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">F</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Out</span><span class="tsd-signature-symbol">&gt;</span>, fn2<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">F</span><span class="tsd-signature-symbol">&gt;</span>, fn3<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">&gt;</span>, fn4<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">&gt;</span>, fn5<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">&gt;</span>, fn6<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Out</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">compose&lt;A, B, C, D, E, F, G, Out&gt;<span class="tsd-signature-symbol">(</span>fn1<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">G</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Out</span><span class="tsd-signature-symbol">&gt;</span>, fn2<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">F</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">G</span><span class="tsd-signature-symbol">&gt;</span>, fn3<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">F</span><span class="tsd-signature-symbol">&gt;</span>, fn4<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">&gt;</span>, fn5<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">&gt;</span>, fn6<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">&gt;</span>, fn7<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Out</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">compose&lt;A, B, C, D, E, F, G, H, Out&gt;<span class="tsd-signature-symbol">(</span>fn1<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">H</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Out</span><span class="tsd-signature-symbol">&gt;</span>, fn2<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">G</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">H</span><span class="tsd-signature-symbol">&gt;</span>, fn3<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">F</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">G</span><span class="tsd-signature-symbol">&gt;</span>, fn4<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">F</span><span class="tsd-signature-symbol">&gt;</span>, fn5<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">&gt;</span>, fn6<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">&gt;</span>, fn7<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">&gt;</span>, fn8<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Out</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">compose&lt;A, B, C, D, E, F, G, H, I, Out&gt;<span class="tsd-signature-symbol">(</span>fn1<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">I</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Out</span><span class="tsd-signature-symbol">&gt;</span>, fn2<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">H</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">I</span><span class="tsd-signature-symbol">&gt;</span>, fn3<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">G</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">H</span><span class="tsd-signature-symbol">&gt;</span>, fn4<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">F</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">G</span><span class="tsd-signature-symbol">&gt;</span>, fn5<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">F</span><span class="tsd-signature-symbol">&gt;</span>, fn6<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">&gt;</span>, fn7<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">&gt;</span>, fn8<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">&gt;</span>, fn9<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Out</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in composition/compose.ts:3</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>A</h4>
+								</li>
+								<li>
+									<h4>B</h4>
+								</li>
+								<li>
+									<h4>Out</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fn1: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Out</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>fn2: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Out</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in composition/compose.ts:8</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>A</h4>
+								</li>
+								<li>
+									<h4>B</h4>
+								</li>
+								<li>
+									<h4>C</h4>
+								</li>
+								<li>
+									<h4>Out</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fn1: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Out</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>fn2: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>fn3: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Out</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in composition/compose.ts:14</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>A</h4>
+								</li>
+								<li>
+									<h4>B</h4>
+								</li>
+								<li>
+									<h4>C</h4>
+								</li>
+								<li>
+									<h4>D</h4>
+								</li>
+								<li>
+									<h4>Out</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fn1: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Out</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>fn2: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>fn3: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>fn4: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Out</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in composition/compose.ts:21</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>A</h4>
+								</li>
+								<li>
+									<h4>B</h4>
+								</li>
+								<li>
+									<h4>C</h4>
+								</li>
+								<li>
+									<h4>D</h4>
+								</li>
+								<li>
+									<h4>E</h4>
+								</li>
+								<li>
+									<h4>Out</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fn1: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Out</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>fn2: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>fn3: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>fn4: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>fn5: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Out</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in composition/compose.ts:29</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>A</h4>
+								</li>
+								<li>
+									<h4>B</h4>
+								</li>
+								<li>
+									<h4>C</h4>
+								</li>
+								<li>
+									<h4>D</h4>
+								</li>
+								<li>
+									<h4>E</h4>
+								</li>
+								<li>
+									<h4>F</h4>
+								</li>
+								<li>
+									<h4>Out</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fn1: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">F</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Out</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>fn2: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">F</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>fn3: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>fn4: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>fn5: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>fn6: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Out</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in composition/compose.ts:38</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>A</h4>
+								</li>
+								<li>
+									<h4>B</h4>
+								</li>
+								<li>
+									<h4>C</h4>
+								</li>
+								<li>
+									<h4>D</h4>
+								</li>
+								<li>
+									<h4>E</h4>
+								</li>
+								<li>
+									<h4>F</h4>
+								</li>
+								<li>
+									<h4>G</h4>
+								</li>
+								<li>
+									<h4>Out</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fn1: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">G</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Out</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>fn2: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">F</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">G</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>fn3: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">F</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>fn4: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>fn5: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>fn6: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>fn7: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Out</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in composition/compose.ts:48</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>A</h4>
+								</li>
+								<li>
+									<h4>B</h4>
+								</li>
+								<li>
+									<h4>C</h4>
+								</li>
+								<li>
+									<h4>D</h4>
+								</li>
+								<li>
+									<h4>E</h4>
+								</li>
+								<li>
+									<h4>F</h4>
+								</li>
+								<li>
+									<h4>G</h4>
+								</li>
+								<li>
+									<h4>H</h4>
+								</li>
+								<li>
+									<h4>Out</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fn1: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">H</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Out</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>fn2: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">G</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">H</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>fn3: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">F</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">G</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>fn4: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">F</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>fn5: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>fn6: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>fn7: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>fn8: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Out</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in composition/compose.ts:59</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>A</h4>
+								</li>
+								<li>
+									<h4>B</h4>
+								</li>
+								<li>
+									<h4>C</h4>
+								</li>
+								<li>
+									<h4>D</h4>
+								</li>
+								<li>
+									<h4>E</h4>
+								</li>
+								<li>
+									<h4>F</h4>
+								</li>
+								<li>
+									<h4>G</h4>
+								</li>
+								<li>
+									<h4>H</h4>
+								</li>
+								<li>
+									<h4>I</h4>
+								</li>
+								<li>
+									<h4>Out</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fn1: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">I</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Out</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>fn2: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">H</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">I</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>fn3: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">G</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">H</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>fn4: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">F</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">G</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>fn5: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">F</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>fn6: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>fn7: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>fn8: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>fn9: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Out</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
 					<a name="dedupe" class="tsd-anchor"></a>
 					<h3>dedupe</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
@@ -341,7 +851,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/baileympearson/iterable-ts/blob/ba91e04e/src/core/dedupe.ts#L20">core/dedupe.ts:20</a></li>
+									<li>Defined in operators/dedupe.ts:20</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -382,7 +892,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/baileympearson/iterable-ts/blob/ba91e04e/src/core/dedupe.ts#L27">core/dedupe.ts:27</a></li>
+									<li>Defined in operators/dedupe.ts:27</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -418,7 +928,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/baileympearson/iterable-ts/blob/ba91e04e/src/core/drop.ts#L10">core/drop.ts:10</a></li>
+									<li>Defined in operators/drop.ts:10</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -463,7 +973,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/baileympearson/iterable-ts/blob/ba91e04e/src/core/drop.ts#L17">core/drop.ts:17</a></li>
+									<li>Defined in operators/drop.ts:17</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -502,7 +1012,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/baileympearson/iterable-ts/blob/ba91e04e/src/core/dropWhile.ts#L8">core/dropWhile.ts:8</a></li>
+									<li>Defined in operators/dropWhile.ts:8</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -565,7 +1075,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/baileympearson/iterable-ts/blob/ba91e04e/src/core/dropWhile.ts#L17">core/dropWhile.ts:17</a></li>
+									<li>Defined in operators/dropWhile.ts:17</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -622,7 +1132,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/baileympearson/iterable-ts/blob/ba91e04e/src/core/enumerate.ts#L11">core/enumerate.ts:11</a></li>
+									<li>Defined in operators/enumerate.ts:11</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -659,7 +1169,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/baileympearson/iterable-ts/blob/ba91e04e/src/core/filter.ts#L9">core/filter.ts:9</a></li>
+									<li>Defined in operators/filter.ts:9</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -723,7 +1233,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/baileympearson/iterable-ts/blob/ba91e04e/src/core/filter.ts#L19">core/filter.ts:19</a></li>
+									<li>Defined in operators/filter.ts:19</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -782,7 +1292,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/baileympearson/iterable-ts/blob/ba91e04e/src/core/find.ts#L3">core/find.ts:3</a></li>
+									<li>Defined in operators/find.ts:3</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -838,7 +1348,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/baileympearson/iterable-ts/blob/ba91e04e/src/core/find.ts#L4">core/find.ts:4</a></li>
+									<li>Defined in operators/find.ts:4</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -889,7 +1399,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/baileympearson/iterable-ts/blob/ba91e04e/src/core/findIndex.ts#L4">core/findIndex.ts:4</a></li>
+									<li>Defined in operators/findIndex.ts:4</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -945,7 +1455,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/baileympearson/iterable-ts/blob/ba91e04e/src/core/findIndex.ts#L5">core/findIndex.ts:5</a></li>
+									<li>Defined in operators/findIndex.ts:5</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -998,7 +1508,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/baileympearson/iterable-ts/blob/ba91e04e/src/utility/into.ts#L8">utility/into.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/baileympearson/iterable-ts/blob/a063eacd/src/utility/into.ts#L8">utility/into.ts:8</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1043,7 +1553,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/baileympearson/iterable-ts/blob/ba91e04e/src/utility/into.ts#L17">utility/into.ts:17</a></li>
+									<li>Defined in <a href="https://github.com/baileympearson/iterable-ts/blob/a063eacd/src/utility/into.ts#L17">utility/into.ts:17</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1073,7 +1583,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/baileympearson/iterable-ts/blob/ba91e04e/src/utility/into.ts#L26">utility/into.ts:26</a></li>
+									<li>Defined in <a href="https://github.com/baileympearson/iterable-ts/blob/a063eacd/src/utility/into.ts#L26">utility/into.ts:26</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1118,7 +1628,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/baileympearson/iterable-ts/blob/ba91e04e/src/utility/into.ts#L35">utility/into.ts:35</a></li>
+									<li>Defined in <a href="https://github.com/baileympearson/iterable-ts/blob/a063eacd/src/utility/into.ts#L35">utility/into.ts:35</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1157,7 +1667,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/baileympearson/iterable-ts/blob/ba91e04e/src/utility/optional.ts#L61">utility/optional.ts:61</a></li>
+									<li>Defined in <a href="https://github.com/baileympearson/iterable-ts/blob/a063eacd/src/utility/optional.ts#L61">utility/optional.ts:61</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1197,7 +1707,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/baileympearson/iterable-ts/blob/ba91e04e/src/utility/optional.ts#L48">utility/optional.ts:48</a></li>
+									<li>Defined in <a href="https://github.com/baileympearson/iterable-ts/blob/a063eacd/src/utility/optional.ts#L48">utility/optional.ts:48</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1237,7 +1747,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/baileympearson/iterable-ts/blob/ba91e04e/src/core/iterate.ts#L6">core/iterate.ts:6</a></li>
+									<li>Defined in operators/iterate.ts:6</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1294,7 +1804,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/baileympearson/iterable-ts/blob/ba91e04e/src/core/map.ts#L2">core/map.ts:2</a></li>
+									<li>Defined in operators/map.ts:4</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1335,7 +1845,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/baileympearson/iterable-ts/blob/ba91e04e/src/core/map.ts#L3">core/map.ts:3</a></li>
+									<li>Defined in operators/map.ts:5</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1388,7 +1898,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/baileympearson/iterable-ts/blob/ba91e04e/src/utility/optional.ts#L33">utility/optional.ts:33</a></li>
+									<li>Defined in <a href="https://github.com/baileympearson/iterable-ts/blob/a063eacd/src/utility/optional.ts#L33">utility/optional.ts:33</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1406,6 +1916,446 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
+					<a name="pipe" class="tsd-anchor"></a>
+					<h3>pipe</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">pipe&lt;A, Out&gt;<span class="tsd-signature-symbol">(</span>f1<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Out</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Out</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">pipe&lt;A, B, Out&gt;<span class="tsd-signature-symbol">(</span>f1<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">&gt;</span>, f2<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Out</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Out</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">pipe&lt;A, B, C, Out&gt;<span class="tsd-signature-symbol">(</span>f1<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">&gt;</span>, f2<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">&gt;</span>, f3<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Out</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Out</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">pipe&lt;A, B, C, D, Out&gt;<span class="tsd-signature-symbol">(</span>f1<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">&gt;</span>, f2<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">&gt;</span>, f3<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">&gt;</span>, f4<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Out</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Out</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">pipe&lt;A, B, C, D, E, Out&gt;<span class="tsd-signature-symbol">(</span>f1<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">&gt;</span>, f2<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">&gt;</span>, f3<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">&gt;</span>, f4<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">&gt;</span>, f5<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Out</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Out</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">pipe&lt;A, B, C, D, E, F, Out&gt;<span class="tsd-signature-symbol">(</span>f1<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">&gt;</span>, f2<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">&gt;</span>, f3<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">&gt;</span>, f4<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">&gt;</span>, f5<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">F</span><span class="tsd-signature-symbol">&gt;</span>, f6<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">F</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Out</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Out</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">pipe&lt;A, B, C, D, E, F, G, Out&gt;<span class="tsd-signature-symbol">(</span>f1<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">&gt;</span>, f2<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">&gt;</span>, f3<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">&gt;</span>, f4<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">&gt;</span>, f5<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">F</span><span class="tsd-signature-symbol">&gt;</span>, f6<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">F</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">G</span><span class="tsd-signature-symbol">&gt;</span>, f7<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">G</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Out</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Out</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">pipe&lt;A, B, C, D, E, F, G, H, Out&gt;<span class="tsd-signature-symbol">(</span>f1<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">&gt;</span>, f2<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">&gt;</span>, f3<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">&gt;</span>, f4<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">&gt;</span>, f5<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">F</span><span class="tsd-signature-symbol">&gt;</span>, f6<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">F</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">G</span><span class="tsd-signature-symbol">&gt;</span>, f7<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">G</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">H</span><span class="tsd-signature-symbol">&gt;</span>, f8<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">H</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Out</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Out</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">pipe&lt;A, B, C, D, E, F, G, H, I, Out&gt;<span class="tsd-signature-symbol">(</span>f1<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">&gt;</span>, f2<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">&gt;</span>, f3<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">&gt;</span>, f4<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">&gt;</span>, f5<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">F</span><span class="tsd-signature-symbol">&gt;</span>, f6<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">F</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">G</span><span class="tsd-signature-symbol">&gt;</span>, f7<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">G</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">H</span><span class="tsd-signature-symbol">&gt;</span>, f8<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">H</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">I</span><span class="tsd-signature-symbol">&gt;</span>, f9<span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">I</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Out</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Out</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in composition/pipe.ts:3</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>A</h4>
+								</li>
+								<li>
+									<h4>Out</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>f1: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Out</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Out</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in composition/pipe.ts:5</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>A</h4>
+								</li>
+								<li>
+									<h4>B</h4>
+								</li>
+								<li>
+									<h4>Out</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>f1: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>f2: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Out</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Out</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in composition/pipe.ts:10</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>A</h4>
+								</li>
+								<li>
+									<h4>B</h4>
+								</li>
+								<li>
+									<h4>C</h4>
+								</li>
+								<li>
+									<h4>Out</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>f1: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>f2: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>f3: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Out</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Out</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in composition/pipe.ts:16</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>A</h4>
+								</li>
+								<li>
+									<h4>B</h4>
+								</li>
+								<li>
+									<h4>C</h4>
+								</li>
+								<li>
+									<h4>D</h4>
+								</li>
+								<li>
+									<h4>Out</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>f1: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>f2: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>f3: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>f4: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Out</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Out</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in composition/pipe.ts:23</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>A</h4>
+								</li>
+								<li>
+									<h4>B</h4>
+								</li>
+								<li>
+									<h4>C</h4>
+								</li>
+								<li>
+									<h4>D</h4>
+								</li>
+								<li>
+									<h4>E</h4>
+								</li>
+								<li>
+									<h4>Out</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>f1: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>f2: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>f3: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>f4: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>f5: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Out</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Out</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in composition/pipe.ts:31</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>A</h4>
+								</li>
+								<li>
+									<h4>B</h4>
+								</li>
+								<li>
+									<h4>C</h4>
+								</li>
+								<li>
+									<h4>D</h4>
+								</li>
+								<li>
+									<h4>E</h4>
+								</li>
+								<li>
+									<h4>F</h4>
+								</li>
+								<li>
+									<h4>Out</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>f1: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>f2: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>f3: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>f4: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>f5: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">F</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>f6: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">F</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Out</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Out</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in composition/pipe.ts:40</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>A</h4>
+								</li>
+								<li>
+									<h4>B</h4>
+								</li>
+								<li>
+									<h4>C</h4>
+								</li>
+								<li>
+									<h4>D</h4>
+								</li>
+								<li>
+									<h4>E</h4>
+								</li>
+								<li>
+									<h4>F</h4>
+								</li>
+								<li>
+									<h4>G</h4>
+								</li>
+								<li>
+									<h4>Out</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>f1: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>f2: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>f3: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>f4: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>f5: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">F</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>f6: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">F</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">G</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>f7: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">G</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Out</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Out</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in composition/pipe.ts:50</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>A</h4>
+								</li>
+								<li>
+									<h4>B</h4>
+								</li>
+								<li>
+									<h4>C</h4>
+								</li>
+								<li>
+									<h4>D</h4>
+								</li>
+								<li>
+									<h4>E</h4>
+								</li>
+								<li>
+									<h4>F</h4>
+								</li>
+								<li>
+									<h4>G</h4>
+								</li>
+								<li>
+									<h4>H</h4>
+								</li>
+								<li>
+									<h4>Out</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>f1: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>f2: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>f3: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>f4: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>f5: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">F</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>f6: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">F</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">G</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>f7: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">G</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">H</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>f8: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">H</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Out</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Out</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in composition/pipe.ts:61</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>A</h4>
+								</li>
+								<li>
+									<h4>B</h4>
+								</li>
+								<li>
+									<h4>C</h4>
+								</li>
+								<li>
+									<h4>D</h4>
+								</li>
+								<li>
+									<h4>E</h4>
+								</li>
+								<li>
+									<h4>F</h4>
+								</li>
+								<li>
+									<h4>G</h4>
+								</li>
+								<li>
+									<h4>H</h4>
+								</li>
+								<li>
+									<h4>I</h4>
+								</li>
+								<li>
+									<h4>Out</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>f1: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>f2: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">B</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>f3: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>f4: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>f5: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">E</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">F</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>f6: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">F</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">G</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>f7: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">G</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">H</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>f8: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">H</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">I</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>f9: <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">I</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Out</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="modules.html#unaryfunction" class="tsd-signature-type" data-tsd-kind="Type alias">UnaryFunction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Out</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function">
 					<a name="range" class="tsd-anchor"></a>
 					<h3>range</h3>
@@ -1419,7 +2369,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/baileympearson/iterable-ts/blob/ba91e04e/src/utility/range.ts#L13">utility/range.ts:13</a></li>
+									<li>Defined in <a href="https://github.com/baileympearson/iterable-ts/blob/a063eacd/src/utility/range.ts#L13">utility/range.ts:13</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Generator</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -1427,7 +2377,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/baileympearson/iterable-ts/blob/ba91e04e/src/utility/range.ts#L14">utility/range.ts:14</a></li>
+									<li>Defined in <a href="https://github.com/baileympearson/iterable-ts/blob/a063eacd/src/utility/range.ts#L14">utility/range.ts:14</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1441,7 +2391,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/baileympearson/iterable-ts/blob/ba91e04e/src/utility/range.ts#L15">utility/range.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/baileympearson/iterable-ts/blob/a063eacd/src/utility/range.ts#L15">utility/range.ts:15</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1458,7 +2408,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/baileympearson/iterable-ts/blob/ba91e04e/src/utility/range.ts#L16">utility/range.ts:16</a></li>
+									<li>Defined in <a href="https://github.com/baileympearson/iterable-ts/blob/a063eacd/src/utility/range.ts#L16">utility/range.ts:16</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1487,7 +2437,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/baileympearson/iterable-ts/blob/ba91e04e/src/core/repeat.ts#L10">core/repeat.ts:10</a></li>
+									<li>Defined in operators/repeat.ts:10</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1523,7 +2473,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/baileympearson/iterable-ts/blob/ba91e04e/src/utility/optional.ts#L18">utility/optional.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/baileympearson/iterable-ts/blob/a063eacd/src/utility/optional.ts#L18">utility/optional.ts:18</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1559,7 +2509,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/baileympearson/iterable-ts/blob/ba91e04e/src/core/take.ts#L3">core/take.ts:3</a></li>
+									<li>Defined in operators/take.ts:3</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1597,7 +2547,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/baileympearson/iterable-ts/blob/ba91e04e/src/core/take.ts#L4">core/take.ts:4</a></li>
+									<li>Defined in operators/take.ts:4</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1630,7 +2580,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/baileympearson/iterable-ts/blob/ba91e04e/src/core/takeWhile.ts#L1">core/takeWhile.ts:1</a></li>
+									<li>Defined in operators/takeWhile.ts:1</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1686,7 +2636,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/baileympearson/iterable-ts/blob/ba91e04e/src/core/takeWhile.ts#L2">core/takeWhile.ts:2</a></li>
+									<li>Defined in operators/takeWhile.ts:2</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1736,7 +2686,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/baileympearson/iterable-ts/blob/ba91e04e/src/core/zip2.ts#L6">core/zip2.ts:6</a></li>
+									<li>Defined in operators/zip2.ts:6</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1779,11 +2729,20 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="modules.html#predicatefunction" class="tsd-kind-icon">Predicate<wbr>Function</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="modules.html#unaryfunction" class="tsd-kind-icon">Unary<wbr>Function</a>
+					</li>
 					<li class=" tsd-kind-function tsd-has-type-parameter">
 						<a href="modules.html#all" class="tsd-kind-icon">all</a>
 					</li>
 					<li class=" tsd-kind-function tsd-has-type-parameter">
 						<a href="modules.html#any" class="tsd-kind-icon">any</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#compose" class="tsd-kind-icon">compose</a>
 					</li>
 					<li class=" tsd-kind-function tsd-has-type-parameter">
 						<a href="modules.html#dedupe" class="tsd-kind-icon">dedupe</a>
@@ -1823,6 +2782,9 @@
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="modules.html#none" class="tsd-kind-icon">none</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#pipe" class="tsd-kind-icon">pipe</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="modules.html#range" class="tsd-kind-icon">range</a>

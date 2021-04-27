@@ -1,5 +1,4 @@
-import { enumerate } from '../../src/core/enumerate'
-import { into } from '../../src/utility'
+import { enumerate, into } from '../../src'
 
 describe('enumerate tests', () => {
   it('produces nothing for an empty iterable', () => {

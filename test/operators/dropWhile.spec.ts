@@ -1,6 +1,5 @@
 
-import { dropWhile } from '../../src/core/dropWhile'
-import { into } from '../../src/utility/into'
+import { dropWhile, into } from '../../src'
 
 describe('drop tests', () => {
     describe('curried tests', () => {

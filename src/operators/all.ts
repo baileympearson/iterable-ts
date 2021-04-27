@@ -1,16 +1,23 @@
 /**
- * Exhausts the iterable and returns true if all elements satisfy the predicate function.
+ * Exhausts the iterable and returns true if all elements satisfy the predicate function.  This version is curried 
+ * to allow for succient composition of operators.
  *
+ * @category Consumption 
+ * 
+ * @typeParam T
  * @returns A function that takes an iterable of type T.  This function exhausts the iterable and returns true if all elements satisfy the predicate.
  */
 export function all<T>(pred: (arg0: T) => boolean): (arg0: Iterable<T>) => boolean
 
 /**
  * Exhausts the iterable and returns true if all elements satisfy the predicate function.
- *
+ * 
+ * @category Consumption 
+ * 
  * @returns true if all the elements satisfy the predicate, false otherwise
  */
 export function all<T>(pred: (arg0: T) => boolean, iter: Iterable<T>): boolean
+
 
 export function all<T>(
   pred: (arg0: T) => boolean,

@@ -32,7 +32,10 @@
     "semantic-release": "semantic-release",
     "semantic-release-prepare": "ts-node tools/semantic-release-prepare",
     "precommit": "lint-staged",
-    "travis-deploy-once": "travis-deploy-once"
+    "travis-deploy-once": "travis-deploy-once",
+    "docs:clean": "rm -rf docs",
+    "docs:build": "npx typedoc --categorizeByGroup true --out docs src/index.ts",
+    "docs:build:watch": "npx typedoc --out docs src/index.ts --watch"
   },
   "lint-staged": {
     "{src,test}/**/*.ts": [
@@ -114,7 +117,7 @@
     "tslint": "^5.11.0",
     "tslint-config-prettier": "^1.15.0",
     "tslint-config-standard": "^8.0.1",
-    "typedoc": "^0.12.0",
+    "typedoc": "^0.20.36",
     "typescript": "^3.0.3"
   },
   "dependencies": {

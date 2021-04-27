@@ -1,5 +1,4 @@
-import { dedupe } from '../../src/core/dedupe'
-import { into } from '../../src/utility/into'
+import { dedupe, into } from '../../src'
 
 describe('dedupe tests', () => {
   describe('non-curried tests', () => {
@@ -31,7 +30,6 @@ describe('dedupe tests', () => {
   describe('curried tests', () => {
     it('should yield nothing on empty iterable', () => {
       const deduper = dedupe()
-      console.error(deduper)
       const source = [] as number[]
       const result = deduper(source)
       expect(into('array', result)).toEqual([])

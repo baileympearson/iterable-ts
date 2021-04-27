@@ -1,6 +1,5 @@
 
-import { find } from '../../src/core/find';
-import { none, some } from '../../src/utility';
+import { none, some, find } from '../../src';
 
 describe('find tests', () => {
     const isEven = (num: number) => num % 2 === 0

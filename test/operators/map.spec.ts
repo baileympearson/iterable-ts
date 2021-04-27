@@ -1,5 +1,4 @@
-import { into } from '../../src/utility'
-import { map } from '../../src/core/map'
+import { map, into } from '../../src'
 
 function id<T>(value: T) {
   return value

@@ -1,5 +1,4 @@
-import { takeWhile } from '../../src/core/takeWhile'
-import { into } from '../../src/utility'
+import { takeWhile, into } from '../../src'
 
 describe('takeWhile tests', () => {
   describe('curried tests', () => {

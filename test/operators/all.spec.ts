@@ -1,4 +1,4 @@
-import { all } from '../../src/core/all'
+import { all } from '../../src'
 
 describe('any tests', () => {
     const isEven = (num: number) => num % 2 === 0

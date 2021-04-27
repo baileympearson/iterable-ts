@@ -1,2 +1,4 @@
-export { map } from './core/map'
-export { filter } from './core/filter'
+export * from './utility'
+export * from './types'
+export * from './operators'
+export * from './composition'

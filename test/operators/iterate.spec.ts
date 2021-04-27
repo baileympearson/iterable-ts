@@ -1,6 +1,4 @@
-import { iterate } from '../../src/core/iterate'
-import { take } from '../../src/core/take'
-import { into } from '../../src/utility'
+import { into, iterate, take } from '../../src'
 
 describe('iterate tests', () => {
     it('should yield the same value infinitely, if the identity function is passed in', () => {

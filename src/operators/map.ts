@@ -1,4 +1,6 @@
-export type MapTransform<In, Out> = (arg0: Iterable<In>) => Generator<Out>
+import { UnaryFunction } from '../types/unary-function'
+
+type MapTransform<In, Out> = UnaryFunction<Iterable<In>, Generator<Out>>
 export function map<In, Out>(f: (arg0: In) => Out): MapTransform<In, Out>
 export function map<In, Out>(f: (arg0: In) => Out, iter: Iterable<In>): Generator<Out>
 

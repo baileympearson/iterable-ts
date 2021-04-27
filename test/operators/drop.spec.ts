@@ -1,5 +1,4 @@
-import { drop } from '../../src/core/drop'
-import { into } from '../../src/utility/into'
+import { drop, into } from '../../src'
 
 describe('drop tests', () => {
     describe('curried tests', () => {

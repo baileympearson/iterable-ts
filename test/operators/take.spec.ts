@@ -1,5 +1,4 @@
-import { take } from '../../src/core/take'
-import { into } from '../../src/utility'
+import { into, take } from '../../src'
 
 describe('take tests', () => {
     describe('curried tests', () => {
