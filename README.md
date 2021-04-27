@@ -38,16 +38,6 @@ function doubledGreaterThan5(source) {
 }
 ```
 
-We can then use it as follows:
-
-```js
-const source = [1, 2, 3]
-const result = doubledGreaterThan5(source)
-for (const value in result) {
-  console.log(result)
-}
-```
-
 Compare this to the curried, free function version:
 
 ```ts
@@ -77,6 +67,14 @@ into(
   map(x => x * 2, range(5))
 ) // [0, 2, 4, 6, 8]
 ```
+
+### Focuses on simplicity
+
+Many libraries attempt to solve multiple problems at once or introduce multiple abstractions. For example, IxJS provides operators
+for both synchronous and asynchronous iterators, as well as providing multiple functions such as `of`, to allow iterator operations
+on primitive values. There is nothing wrong with this approach. Instead, iterable-ts is focused purely on synchronous iterators.  
+It also does not provide functions to elevate non-iterable values into iterators (although, feel free to write these yourself
+if you'd like. They're easy to write using generator functions).
 
 ## Installation
 
