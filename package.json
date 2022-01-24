@@ -1,18 +1,22 @@
 {
-  "name": "functional-programming-library",
-  "version": "0.0.0",
-  "description": "",
-  "keywords": [],
-  "main": "dist/functional-programming-library.umd.js",
-  "module": "dist/functional-programming-library.es5.js",
-  "typings": "dist/types/functional-programming-library.d.ts",
-  "files": [
-    "dist"
+  "name": "iterable-typescript",
+  "version": "1.0.4",
+  "description": "An iterator based functional programming library for Typescript.",
+  "keywords": [
+    "Typescript",
+    "iterators",
+    "functional programming"
   ],
-  "author": " <>",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib",
+    "src"
+  ],
+  "author": "https://github.com/baileympearson",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/baileympearson/iterable-ts"
   },
   "license": "MIT",
   "engines": {
@@ -21,8 +25,7 @@
   "scripts": {
     "lint": "tslint  --project tsconfig.json -t codeFrame 'src/**/*.ts' 'test/**/*.ts'",
     "prebuild": "rimraf dist",
-    "build": "tsc --module commonjs && rollup -c rollup.config.ts && typedoc --out docs src/index.ts",
-    "start": "rollup -c rollup.config.ts -w",
+    "build": "tsc",
     "test": "jest --coverage",
     "test:watch": "jest --coverage --watch",
     "test:prod": "npm run lint && npm run test -- --no-cache",
@@ -31,8 +34,6 @@
     "commit": "git-cz",
     "semantic-release": "semantic-release",
     "semantic-release-prepare": "ts-node tools/semantic-release-prepare",
-    "precommit": "lint-staged",
-    "travis-deploy-once": "travis-deploy-once",
     "docs:clean": "rm -rf docs",
     "docs:build": "npx typedoc --categorizeByGroup true --out docs src/index.ts"
   },
@@ -120,6 +121,7 @@
     "typescript": "^3.0.3"
   },
   "dependencies": {
-    "core-js": "^2.6.12"
+    "core-js": "^2.6.12",
+    "iterable-typescript": "^1.0.3"
   }
 }

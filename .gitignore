@@ -1,4 +1,4 @@
 node_modules
 coverage
-dist/
 .rpt2_cache
+lib
