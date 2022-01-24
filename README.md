@@ -1,6 +1,6 @@
 # iterable-ts
 
-This library is still a work-in-progress.
+This library is still a work-in-progress!
 
 Documentation: https://github.com/baileympearson/iterable-ts
 
